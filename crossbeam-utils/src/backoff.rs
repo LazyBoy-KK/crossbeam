@@ -2,8 +2,8 @@ use crate::primitive::hint;
 use core::cell::Cell;
 use core::fmt;
 
-const SPIN_LIMIT: u32 = 6;
-const YIELD_LIMIT: u32 = 10;
+const SPIN_LIMIT: u32 = 5;
+const YIELD_LIMIT: u32 = 16;
 
 /// Performs exponential backoff in spin loops.
 ///
